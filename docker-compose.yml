@@ -1,0 +1,26 @@
+version: '3.8' # 指定 docker-compose 文件格式的版本，建议使用较新的稳定版本
+
+services: # 定义服务列表
+  app: # 定义一个名为 'app' 的服务，您可以根据喜好命名
+    build: # 指定如何构建此服务的镜像
+      context: . # 构建上下文的路径，'.' 表示 docker-compose.yml 文件所在的当前目录
+      dockerfile: Dockerfile # 指定用于构建镜像的 Dockerfile 文件名
+    ports: # 定义端口映射
+      - "3000:3000" # 将主机的 3000 端口映射到容器内部的 3000 端口
+                    # 格式是 "HOST_PORT:CONTAINER_PORT"
+    restart: always # 配置容器的重启策略
+                    # 'always' 表示无论容器因何种原因退出，Docker 都会尝试重启它
+                    # 其他选项如 'on-failure', 'unless-stopped'
+    env_file: # 指定一个或多个包含环境变量的文件
+      - .env  # 从项目根目录下的 .env 文件加载环境变量
+              # 确保 .env 文件已创建，并且包含所有必要的生产环境变量
+              # 同时，确保 .env 文件已添加到 .gitignore，以防敏感信息泄露
+
+    # 如果需要，您仍然可以在这里直接定义一些环境变量。
+    # 如果变量在 .env 文件和这里都定义了，.env 文件中的值通常会覆盖这里的值。
+    # environment:
+    #   SOME_OTHER_VARIABLE: "some_value"
+
+networks: # 定义网络
+  default: # 使用默认网络驱动
+    driver: bridge # Docker 默认的网络驱动，适用于单主机部署
