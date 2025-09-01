@@ -235,3 +235,112 @@ node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
 
 ## 9. 许可证
 本项目采用 [MIT](LICENSE) 许可证
+
+
+
+
+"projects": [
+    {
+      "id": "5d900e3f-3327-45a2-bc6a-5f9345429c5a",
+      "title": "LOL-DeepWinPredictor",
+      "description": "基于双向双层、引入注意力机制的LSTM对英雄联盟比赛胜率进行预测",
+      "imageUrl": "https://socialify.git.ci/Viper373/LOL-DeepWinPredictor/image?description=1&font=Source+Code+Pro&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FLOL-DeepWinPredictor%2Flogo.png&name=1&owner=1&pulls=1&stargazers=1&theme=Light",
+      "tags": [
+        "Python",
+        "Pytorch",
+        "Flask",
+        "Deep-Learning"
+      ],
+      "githubUrl": "https://github.com/Viper373/LOL-DeepWinPredictor",
+      "demoUrl": "https://lol.viper3.us.kg"
+    },
+    {
+      "id": "new_1748645473744_dd8tokvshqb",
+      "title": "ZeroHome",
+      "description": "轻量、现代、更加配置化的一站式模版个人主页",
+      "imageUrl": "https://socialify.git.ci/Viper373/ZeroHome/image?description=1&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FZeroHome%2Flogo.png&name=1&owner=1&pulls=1&stargazers=1&theme=Light",
+      "tags": [
+        "React",
+        "Next.js"
+      ],
+      "githubUrl": "https://github.com/Viper373/ZeroHome",
+      "demoUrl": "https://viper3.top",
+      "isPinned": false,
+      "status": "published",
+      "category": "",
+      "priority": 4,
+      "startDate": "2025-05-30",
+      "endDate": ""
+    },
+    {
+      "id": "e79e853f-20af-4814-a2a8-db440538528e",
+      "title": "XOVideos",
+      "description": "一个为用户打造的个性化视频下载工具",
+      "imageUrl": "https://socialify.git.ci/Viper373/XOVideos/image?description=1&font=Inter&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FXOVideos%2Flogo.png&name=1&owner=1&pattern=Circuit+Board&pulls=1&stargazers=1&theme=Light",
+      "tags": [
+        "Python",
+        "Crawler",
+        "m3u8",
+        "boto3"
+      ],
+      "githubUrl": "https://github.com/Viper373/XOVideos",
+      "demoUrl": ""
+    },
+    {
+      "id": "new_1748409450807_zpiwj7ca8i",
+      "title": "LightS4",
+      "description": "一款基于React和fastapi的S3文件管理器，可在线管理文件",
+      "imageUrl": "https://socialify.git.ci/Viper373/LightS4/image?description=1&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FLightS4%2Flogo.png&name=1&owner=1&pulls=1&stargazers=1&theme=Light",
+      "tags": [
+        "React",
+        "FastAPI",
+        "S3"
+      ],
+      "githubUrl": "https://github.com/Viper373/LightS4",
+      "demoUrl": "https://s4.viper3.top",
+      "isPinned": false,
+      "status": "published",
+      "category": "",
+      "priority": 1,
+      "startDate": "2025-05-28",
+      "endDate": ""
+    },
+    {
+      "id": "new_1748413629164_jq6iiy5atp7",
+      "title": "GSC-Kit",
+      "description": "🚀 GSC-Kit旨在自动化从 Google Search Console (GSC) 提取数据，帮助高效地收集和整理网站的性能指标",
+      "imageUrl": "https://socialify.git.ci/Viper373/GSC-Kit/image?description=1&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FGSC-Kit%2Flogo.png&name=1&owner=1&pulls=1&stargazers=1&theme=Light",
+      "tags": [
+        "Python",
+        "JavaScript",
+        "Google"
+      ],
+      "githubUrl": "https://github.com/Viper373/BIPT-JWZX_eduAssess",
+      "demoUrl": "",
+      "isPinned": false,
+      "status": "published",
+      "category": "",
+      "priority": 2,
+      "startDate": "2025-05-28",
+      "endDate": ""
+    },
+    {
+      "id": "new_1748617519133_yc8awjlne2f",
+      "title": "JD-comments",
+      "description": "爬取京东商品评论数据",
+      "imageUrl": "https://img.viper3.top/echo.viper3.top/zoel2D.jpg",
+      "tags": [
+        "Python",
+        "Crawler",
+        "Data-Analysis"
+      ],
+      "githubUrl": "https://github.com/Viper373/JD-comments",
+      "demoUrl": "",
+      "isPinned": false,
+      "status": "published",
+      "category": "",
+      "priority": 3,
+      "startDate": "2025-05-30",
+      "endDate": ""
+    }
+  ],
