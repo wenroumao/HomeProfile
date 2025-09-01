@@ -126,8 +126,8 @@
     "items": [
       {
         "type": "beian",
-        "icpBeian": "<span style=\"display: inline-flex; align-items: center; white-space: nowrap;\">   <img src=\"https://img.viper3.top/user/ICP.ico\" alt=\"ICP\" style=\"height: 1em; margin-right: 0.25em;\">   京ICP备2023015801号 </span>",
-        "mengIcpBeian": "<span style=\"display: inline-flex; align-items: center; white-space: nowrap;\">   <img src=\"https://img.viper3.top/user/cuteICP.ico\" alt=\"萌ICP\" style=\"height: 1em; margin-right: 0.25em;\">   萌ICP备20251217号 </span>",
+        "icpBeian": "<span style=\"display: inline-flex; align-items: center; white-space: nowrap;\">   <img src=\"https://img.viper3.top/user/ICP.ico\" alt=\"ICP\" style=\"height: 1em; margin-right: 0.25em;\">    </span>",
+        "mengIcpBeian": "<span style=\"display: inline-flex; align-items: center; white-space: nowrap;\">   <img src=\"https://img.viper3.top/user/cuteICP.ico\" alt=\"萌ICP\" style=\"height: 1em; margin-right: 0.25em;\">    </span>",
         "icpBeianUrl": "https://beian.miit.gov.cn/",
         "mengIcpBeianUrl": "https://icp.gov.moe/?keyword=20251217"
       },

@@ -27,6 +27,8 @@ import {
 import { CSS } from '@dnd-kit/utilities';
 import { useTranslation } from "react-i18next"; // Import useTranslation
 
+import { v4 as uuidv4 } from 'uuid';
+
 // Keep these interfaces in sync with components/footer.tsx and app/api/footer/route.ts
 interface FooterItemBase {
   id: string;
@@ -255,7 +257,7 @@ export default function FooterAdminPage() {
       let data: FooterSettings = await response.json();
       const itemsWithIds = (data.items || []).map(item => ({
         ...item,
-        id: item.id || crypto.randomUUID(),
+        id: item.id || uuidv4(),
       }));
       setFooterSettings({ items: itemsWithIds });
     } catch (err: any) {
@@ -474,4 +476,4 @@ export default function FooterAdminPage() {
       </Card>
     </div>
   );
-} 
+}

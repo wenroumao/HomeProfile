@@ -83,9 +83,10 @@ export async function PUT(request: Request) {
 
   } catch (error) {
     console.error("处理 PUT /api/footer 时出错:", error);
+    console.error((error as Error).stack); // 添加错误堆栈日志
     if (error instanceof SyntaxError && error.message.includes('JSON')) {
         return NextResponse.json({ message: '请求体中的JSON格式无效。' }, { status: 400 });
     }
     return NextResponse.json({ message: '更新页脚设置时出错。' }, { status: 500 }); // 也可考虑将错误消息改为中文
   }
-} 
+}
