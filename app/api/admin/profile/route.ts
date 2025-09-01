@@ -4,7 +4,7 @@ import path from 'path'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/app/api/auth/[...nextauth]/route'
 
-const SETTINGS_PATH = path.resolve(process.cwd(), 'settings.json')
+const SETTINGS_PATH = process.env.NODE_ENV === 'production' ? '/tmp/settings.json' : path.resolve(process.cwd(), 'settings.json')
 
 function readSettings() {
   if (!fs.existsSync(SETTINGS_PATH)) {
@@ -99,4 +99,4 @@ export async function POST(request: Request) {
     }
     return NextResponse.json({ message }, { status: 500 })
   }
-} 
+}

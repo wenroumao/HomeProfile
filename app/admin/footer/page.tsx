@@ -27,7 +27,12 @@ import {
 import { CSS } from '@dnd-kit/utilities';
 import { useTranslation } from "react-i18next"; // Import useTranslation
 
+// 导入uuid v4函数用于生成唯一ID
 import { v4 as uuidv4 } from 'uuid';
+// 为uuid模块添加类型声明
+declare module 'uuid' {
+  export function v4(): string;
+}
 
 // Keep these interfaces in sync with components/footer.tsx and app/api/footer/route.ts
 interface FooterItemBase {

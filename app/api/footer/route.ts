@@ -5,7 +5,7 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '@/app/api/auth/[...nextauth]/route'; // 导入 authOptions
 
 // Determine the path to settings.json, assuming it's in the project root
-const settingsFilePath = path.resolve(process.cwd(), 'settings.json');
+const settingsFilePath = process.env.NODE_ENV === 'production' ? '/tmp/settings.json' : path.resolve(process.cwd(), 'settings.json');
 
 /**
  * Handles GET requests to fetch footer settings.
