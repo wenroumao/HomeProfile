@@ -81,15 +81,16 @@
     "sonner": "^1.7.4",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
+    "uuid": "^9.0.0",
     "vaul": "latest",
-    "zod": "^3.25.42",
-    "uuid": "^9.0.0"
+    "zod": "^3.25.42"
   },
   "devDependencies": {
     "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@types/uuid": "^10.0.0",
     "i18next-parser": "^9.3.0",
     "postcss": "^8.5.4",
     "tailwindcss": "^3.4.17",

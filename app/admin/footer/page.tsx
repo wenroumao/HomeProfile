@@ -29,10 +29,6 @@ import { useTranslation } from "react-i18next"; // Import useTranslation
 
 // 导入uuid v4函数用于生成唯一ID
 import { v4 as uuidv4 } from 'uuid';
-// 为uuid模块添加类型声明
-declare module 'uuid' {
-  export function v4(): string;
-}
 
 // Keep these interfaces in sync with components/footer.tsx and app/api/footer/route.ts
 interface FooterItemBase {
@@ -377,7 +373,7 @@ export default function FooterAdminPage() {
 
   const addItem = (type: 'beian' | 'customText' | 'customLinks') => {
     let newItem: FooterItem;
-    const newId = crypto.randomUUID();
+    const newId = uuidv4();
     switch (type) {
         case 'beian':
             newItem = { id: newId, type: 'beian', icpBeian: '', mengIcpBeian: '', icpBeianUrl: 'https://beian.miit.gov.cn/', mengIcpBeianUrl: '#' };
