@@ -79,9 +79,9 @@ if (typeof window !== 'undefined') {
 
 // 缓存键
 const NETEASE_CACHE_KEY = 'netease_music_data';
-// 缓存过期时间（12小时）
-const CACHE_EXPIRY = 12 * 60 * 60 * 1000;
-
+// 缓存过期时间（30分钟）
+const CACHE_EXPIRY = 30 * 60 * 1000;
+// 
 // 使用memo优化组件，避免不必要的重新渲染
 export const NeteaseMusicStats = memo(function NeteaseMusicStats() {
   const [records, setRecords] = useState<SongRecord[]>([])
@@ -220,7 +220,7 @@ export const NeteaseMusicStats = memo(function NeteaseMusicStats() {
           records: data.data,
           timestamp: now
         }));
-        console.log('网易云音乐数据已缓存，有效期12小时');
+        console.log('网易云音乐数据已缓存，有效期30分钟');
       } catch (e: any) {
         console.error('获取网易云音乐数据失败:', e);
         setError(t('neteaseMusic.fetchError') + (e.message || '未知错误'));
@@ -292,41 +292,46 @@ export const NeteaseMusicStats = memo(function NeteaseMusicStats() {
 
   // 展示最近一周听歌明细，风格与Steam统计一致
   return (
-    <Card className="bg-white/[.60] dark:bg-black/[.30] border border-white/10 shadow-xl rounded-2xl flex flex-col p-1 transition-all hover:shadow-2xl hover:scale-[1.01] w-full h-full overflow-hidden">
-      <CardHeader className="pt-0 pb-2">
-        <CardTitle className="flex items-center gap-2 text-lg">
-          <SiNeteasecloudmusic className="text-red-500 h-6 w-6" /> {t("neteaseMusic.title")}
+    <Card className="bg-white/[.60] dark:bg-black/[.30] border border-white/10 shadow-xl rounded-2xl flex flex-col p-2 sm:p-4 transition-all hover:shadow-2xl hover:scale-[1.01] w-full h-full overflow-hidden">
+      <CardHeader className="pt-2 pb-3 px-2 sm:px-4">
+        <CardTitle className="flex items-center gap-2 text-lg sm:text-xl">
+          <SiNeteasecloudmusic className="text-red-500 h-5 w-5 sm:h-6 sm:w-6" /> {t("neteaseMusic.title")}
         </CardTitle>
       </CardHeader>
-      <CardContent className="bg-transparent pt-3 w-full">
-        <h4 className="text-md font-semibold mb-2 flex items-center gap-2"><span className="inline-block w-2 h-2 rounded-full bg-red-500" />{t('neteaseMusic.recentPlaysTitle')}</h4>
-        <ul className="grid grid-cols-3 gap-3">
-          {records.map((song) => (
-            <li key={song.id}>
-              <a
-                href={`https://music.163.com/song?id=${song.id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 group hover:bg-white/20 dark:hover:bg-black/30 rounded-lg p-2 transition"
-              >
-                <img
-                  src={song.cover}
-                  alt={song.name}
-                  className="h-10 w-10 rounded shadow object-cover"
-                />
-                <div className="min-w-0">
-                  <p className="font-medium text-sm text-foreground whitespace-nowrap">{song.name}</p>
-                  <p 
-                    className="text-xs text-muted-foreground whitespace-nowrap" 
-                    style={{ textShadow: '0px 0px 5px rgba(0,0,0,0.7)' }}
-                  >
-                    {song.artists.join(' / ')} · {song.playCount}{t('neteaseMusic.playCountUnit')}
-                  </p>
-                </div>
-              </a>
-            </li>
-          ))}
-        </ul>
+      <CardContent className="bg-transparent pt-0 px-2 sm:px-4 pb-2 sm:pb-4 w-full flex-1 overflow-hidden">
+        <h4 className="text-sm sm:text-md font-semibold mb-2 sm:mb-3 flex items-center gap-2">
+          <span className="inline-block w-2 h-2 rounded-full bg-red-500" />
+          {t('neteaseMusic.recentPlaysTitle')} ({records.length} {t('neteaseMusic.songsUnit')})
+        </h4>
+        <div className="h-full overflow-y-auto pr-2">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-2 sm:gap-3">
+            {records.map((song) => (
+              <li key={song.id}>
+                <a
+                  href={`https://music.163.com/song?id=${song.id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 sm:gap-3 group hover:bg-white/20 dark:hover:bg-black/30 rounded-lg p-1.5 sm:p-2 transition"
+                >
+                  <img
+                    src={song.cover}
+                    alt={song.name}
+                    className="h-10 w-10 sm:h-12 sm:w-12 rounded shadow object-cover flex-shrink-0"
+                  />
+                  <div className="min-w-0 flex-1">
+                    <p className="font-medium text-xs sm:text-sm text-foreground truncate">{song.name}</p>
+                    <p 
+                      className="text-xs text-muted-foreground truncate" 
+                      style={{ textShadow: '0px 0px 5px rgba(0,0,0,0.7)' }}
+                    >
+                      {song.artists.join(' / ')} · {song.playCount}{t('neteaseMusic.playCountUnit')}
+                    </p>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </CardContent>
     </Card>
   )

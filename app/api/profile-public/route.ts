@@ -16,7 +16,6 @@ export async function GET() {
     const settings = readSettings();
     const profile = settings.profile || {};
     const social_links = profile.social_links || [];
-    const rss_url = profile.rss_url || '';
     const folo_url = profile.folo_url || '';
     const steam_api_key = process.env.STEAM_API_KEY || '';
     
@@ -29,7 +28,6 @@ export async function GET() {
     return NextResponse.json({
       ...profile,
       social_links,
-      rss_url,
       folo_url,
       steam_api_key,
       steam_user_id,
@@ -41,4 +39,4 @@ export async function GET() {
     console.error('Error fetching profile data:', error);
     return NextResponse.json({ message: 'Error fetching profile data' }, { status: 500 });
   }
-} 
+}

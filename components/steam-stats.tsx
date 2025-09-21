@@ -55,8 +55,8 @@ if (typeof window !== 'undefined') {
 
 // 缓存键
 const STEAM_CACHE_KEY = 'steam_stats_data';
-// 缓存过期时间（6小时）
-const CACHE_EXPIRY = 6 * 60 * 60 * 1000;
+// 缓存过期时间（30分钟）
+const CACHE_EXPIRY = 30 * 60 * 1000;
 
 // 使用memo优化组件，避免不必要的重新渲染
 export const SteamStats = memo(function SteamStats() {

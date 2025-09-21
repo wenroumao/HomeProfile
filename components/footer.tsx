@@ -186,7 +186,7 @@ export function Footer() {
           rel="noopener noreferrer" 
           className="text-primary hover:underline mx-1"
         >
-          Viper373
+          wenroumao
         </a>
       </div>
     </motion.footer>

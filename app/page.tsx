@@ -10,7 +10,7 @@ import { GitHubCalendar } from "@/components/github-calendar"
 import { MBTICard } from "@/components/mbti-card"
 import { SteamStats } from "@/components/steam-stats"
 import { NeteaseMusicStats } from "@/components/netease-music-stats"
-import { RSSSubscription } from "@/components/rss-subscription"
+
 import { PageHeaderControls } from "@/components/page-header-controls"
 import { BackgroundVideo } from "@/components/background-video"
 
@@ -180,30 +180,29 @@ export default function Home() {
             </motion.div>
           </motion.div>
         </section>
-        {/* Second Screen - RSS, MBTI, Steam, NetEase */}
+        {/* Second Screen - MBTI, Steam, NetEase */}
         <section 
           id="section-2"
           className="w-full min-h-screen py-16 pb-24 relative flex flex-col items-center justify-start overflow-visible z-10"
         >
           <div className="w-full max-w-[1500px] pl-0 pr-0 md:px-4 flex flex-col gap-y-6">
             {/* Main Grid for two columns */}
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-x-6 gap-y-6 w-full">
-              {/* Left Column: Steam and Netease Music */}
-              <div className="md:col-span-7 flex flex-col gap-y-6">
-                <div className="h-[380px] w-full">
-                  <SteamStats />
-                </div>
-                <div className="h-[450px] w-full">
-                  <NeteaseMusicStats />
-                </div>
+            <div className="flex flex-col gap-y-6 w-full">
+              {/* Full Width: Netease Music */}
+              <div className="h-[450px] w-full">
+                <NeteaseMusicStats />
               </div>
-              {/* Right Column: MBTI and RSS */}
-              <div className="md:col-span-5 flex flex-col gap-y-6">
-                <div className="h-[300px]">
-                  <MBTICard />
+              {/* Two Column Layout: Steam and MBTI */}
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-x-6 gap-y-6 w-full">
+                <div className="md:col-span-7 flex flex-col gap-y-6">
+                  <div className="h-[380px] w-full">
+                    <SteamStats />
+                  </div>
                 </div>
-                <div className="h-[530px]">
-                  <RSSSubscription />
+                <div className="md:col-span-5 flex flex-col gap-y-6">
+                  <div className="h-[300px]">
+                    <MBTICard />
+                  </div>
                 </div>
               </div>
             </div>

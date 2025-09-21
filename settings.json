@@ -1,20 +1,20 @@
 {
   "profile": {
-    "avatar_url": "https://img.viper3.top/user/pikaeight.jpg",
-    "introduction": "一个破烂爬虫开发者丨前端又菜又爱玩丨啥都会点丨9年老烟民 🤣",
-    "githubUsername": "Viper373",
-    "signature_svg_url1": "https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=25&letterSpacing=0.15rem&duration=3000&color=FF53B4&center=true&vCenter=true&multiline=true&width=435&height=45&lines=Viper373%E4%B8%A8%E5%B0%8F%E6%9A%AE%E7%AC%99",
-    "signature_svg_url2": "https://readme-typing-svg.demolab.com?font=Concert+One&size=25&letterSpacing=0.1rem&duration=3000&color=08D2AB&center=true&vCenter=true&multiline=true&width=435&height=80&lines=A+Python+Developer;Always+Debug+Life",
-    "mbti_type": "INFJ-T",
-    "mbti_title": "提倡者",
-    "mbti_image_url": "https://www.16personalities.com/static/images/personality-types/avatars/infj-advocate.svg",
+    "avatar_url": "https://wenroumao.oss-cn-beijing.aliyuncs.com/img/%E5%A4%B4%E5%83%8F",
+    "introduction": "一个破烂爬虫开发者丨前端又菜又爱玩丨啥都会点 🤣",
+    "githubUsername": "wenroumao",
+    "signature_svg_url1": "https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F724BC&center=true&width=435&lines=%E6%97%A9%E7%9F%A5%E9%81%93%E6%98%AF%E8%BF%99%E4%B8%AA%E7%BB%93%E6%9E%9C%EF%BC%8C%E5%BD%93%E5%88%9D%E5%B0%B1%E4%B8%8D%E4%B8%BB%E5%8A%A8%E4%BA%86",
+    "signature_svg_url2": "https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=%E5%8A%AA%E5%8A%9B%E6%9C%89%E7%94%A8%E5%90%97%EF%BC%9F+%E5%AF%B9%EF%BC%8C%E4%BD%A0%E5%8A%AA%E5%8A%9B%E4%BA%86%E5%8F%AF%E8%83%BD%E4%BD%A0%E4%BB%8A%E5%A4%A9%E6%8C%A3%E4%BA%94%E5%8D%83%E5%9D%97%E9%92%B1;%E6%98%8E%E5%A4%A9%E6%8C%A3%E4%B8%83%E5%8D%83+%E5%85%AB%E5%8D%83+%E5%B0%B1%E7%AE%97%E4%BD%A0%E5%86%8D%E5%8A%AA%E5%8A%9B%E4%B8%80%E7%82%B9+%E6%98%8E%E5%A4%A9%E4%BD%A0%E4%BB%8E;%E4%B8%83%E5%8D%83%E5%85%AB%E5%8D%83%E6%B6%A8%E5%88%B0%E4%B8%80%E4%B8%87%E5%9D%97%E9%92%B1%E4%BA%86%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8%E5%91%A2%EF%BC%9F+%E6%88%91%E5%A5%B3%E5%84%BF;%E8%BF%99%E4%B8%AA%E5%B9%B4%E7%BA%AA%E5%A5%B9%E4%B9%9F%E7%AD%89%E4%B8%8D%E4%BA%86%EF%BC%8C%E6%9C%89%E4%B8%80%E5%A4%A9%E4%BD%A0%E4%BC%9A%E6%88%90%E5%8A%9F;%E4%B9%9F%E8%AE%B8+%E9%82%A3%E5%BE%97%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%95%8A%EF%BC%81",
+    "mbti_type": "ISFJ-T",
+    "mbti_title": "辩护人",
+    "mbti_image_url": "https://www.16personalities.com/static/images/theory/traits/16personalities_trait_introverted.svg",
     "mbti_traits": [
-      "富有创造力的视角",
-      "致力于自我提升",
-      "鼓励他人成长",
-      "洞察力解决问题"
+      "性格特征：内向- 80%",
+      "善于观察- 64%",
+      "感性- 62%",
+      "判断- 58%",
+      "动荡- 78%"
     ],
-    "rss_url": "",
     "folo_url": "",
     "steam_user_id": "76561199109439467",
     "netease_user_id": "1881146945",
@@ -23,11 +23,6 @@
         "name": "GitHub",
         "url": "https://github.com/wenroumao",
         "icon": "SiGithub"
-      },
-      {
-        "name": "Mail",
-        "url": "mailto:2964421512@qq.com",
-        "icon": "MdEmail"
       },
       {
         "name": "QQ",
@@ -41,17 +36,17 @@
       },
       {
         "name": "Steam",
-        "url": "",
+        "url": "https://steamcommunity.com/profiles/76561199109439467/",
         "icon": "SiSteam"
       },
       {
-        "name": "Neteasecloudmusic",
+        "name": "网易云音乐",
         "url": "https://music.163.com/#/user/home?id=1881146945",
         "icon": "si-neteasecloudmusic"
       },
       {
-        "name": "Douyin",
-        "url": "",
+        "name": "抖音",
+        "url": "https://www.douyin.com/user/MS4wLjABAAAA0vJm4xaBwiGOV4dYfhMuab-oW5NZiAhyZdaqkxg3CyQ?from_tab_name=main",
         "icon": "SiTiktok"
       }
     ]
@@ -122,6 +117,8 @@
       ]
     }
   ],
+
+  
   "footer": {
     "items": [
       {
@@ -129,11 +126,11 @@
         "icpBeian": "<span style=\"display: inline-flex; align-items: center; white-space: nowrap;\">   <img src=\"https://img.viper3.top/user/ICP.ico\" alt=\"ICP\" style=\"height: 1em; margin-right: 0.25em;\">    </span>",
         "mengIcpBeian": "<span style=\"display: inline-flex; align-items: center; white-space: nowrap;\">   <img src=\"https://img.viper3.top/user/cuteICP.ico\" alt=\"萌ICP\" style=\"height: 1em; margin-right: 0.25em;\">    </span>",
         "icpBeianUrl": "https://beian.miit.gov.cn/",
-        "mengIcpBeianUrl": "https://icp.gov.moe/?keyword=20251217"
+        "mengIcpBeianUrl": ""
       },
       {
         "type": "copyright",
-        "authorName": "Viper373",
+        "authorName": "wenroumao",
         "startYear": 2025
       },
       {
@@ -141,5 +138,8 @@
         "text": "<div style=\"font-size:15px;font-weight:bold;background:linear-gradient(90deg,#ff0000 0%,#ff8000 6.25%,#ffff00 12.5%,#80ff00 18.75%,#00ff00 25%,#00ff80 31.25%,#00ffff 37.5%,#0080ff 43.75%,#0000ff 50%,#8000ff 56.25%,#ff00ff 62.5%,#ff0080 68.75%,#ff0000 75%,#ff8000 81.25%,#ffff00 87.5%,#80ff00 93.75%,#00ff00 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rainbow 6s linear infinite;text-align:center;font-family:sans-serif;padding:0.5em\">平平无奇的爬虫开发者</div> <style> @keyframes rainbow{   0%{background-position:0% 50%}   100%{background-position:200% 50%} } </style>"
       }
     ]
-  }
+  },
+    "siteTitle": "温柔猫",
+  "enableDarkMode": false,
+  "homePageTitle": "温柔猫"
 }

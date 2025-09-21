@@ -74,11 +74,20 @@ export const SocialIcons = memo(function SocialIcons() {
                             <TooltipTrigger asChild>
                             <motion.a
                                     layout
-                                    href={social.url}
+                                    href={social.url || (social.name === "QQ" ? "#" : social.url)}
                                     className="w-10 h-10 rounded-full bg-secondary backdrop-blur-sm flex items-center justify-center hover:bg-accent transition-colors duration-200 ease-out"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    target={social.url ? "_blank" : "_self"}
+                                    rel={social.url ? "noopener noreferrer" : undefined}
                                     aria-label={social.name}
+                                    onClick={social.name === "QQ" && !social.url ? (e) => {
+                                        e.preventDefault();
+                                        navigator.clipboard.writeText("2964421512").then(() => {
+                                            // 可以添加toast提示复制成功
+                                            console.log("QQ号已复制到剪贴板");
+                                        }).catch(() => {
+                                            console.log("复制失败");
+                                        });
+                                    } : undefined}
                                     style={{
                                         opacity: 1,
                                     }}
@@ -115,7 +124,12 @@ export const SocialIcons = memo(function SocialIcons() {
                                 </motion.a>
                             </TooltipTrigger>
                             <TooltipContent>
-                                <p>{social.name}</p>
+                                <p>
+                                    {social.name === "QQ" && !social.url 
+                                        ? "QQ: 2964421512 (点击复制)" 
+                                        : social.name
+                                    }
+                                </p>
                             </TooltipContent>
                         </Tooltip>
                     );

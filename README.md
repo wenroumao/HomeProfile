@@ -1,4 +1,4 @@
-![ZeroHome](https://socialify.git.ci/Viper373/ZeroHome/image?description=1&forks=1&issues=1&logo=https://img.viper3.top/ZeroHome/logo.png&name=1&owner=1&pulls=1&stargazers=1&theme=Auto)
+![ZeroHome](https://socialify.git.ci/wenroumao/ZeroHome/image?description=1&forks=1&issues=1&logo=https://img.viper3.top/ZeroHome/logo.png&name=1&owner=1&pulls=1&stargazers=1&theme=Auto)
 
 # 🏝️ ZeroHome
 
@@ -46,7 +46,7 @@
 ### 4.2. 本地开发
 ```bash
 # 1. 克隆项目
-git clone https://github.com/Viper373/ZeroHome.git
+git clone https://github.com/wenroumao/ZeroHome.git
 cd ZeroHome
 
 # 2. 安装依赖
@@ -136,9 +136,9 @@ docker-compose down
 
 ### 5.4. ▲ Vercel 部署
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FViper373%2FZeroHome&env=ADMIN_USERNAME,ADMIN_PASSWORD,STEAM_API_KEY,NETEASE_MUSIC_U,NEXTAUTH_SECRET)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwenroumao%2FZeroHome&env=ADMIN_USERNAME,ADMIN_PASSWORD,STEAM_API_KEY,NETEASE_MUSIC_U,NEXTAUTH_SECRET)
 1. 注册并登录 [Vercel](https://vercel.com/)。
-2. 点击 "New Project"，导入您的 GitHub 仓库（如 Viper373/ZeroHome）。
+2. 点击 "New Project"，导入您的 GitHub 仓库（如 wenroumao/ZeroHome）。
 3. 选择 Next.js 框架，保持默认构建设置。
 4. 在 **Settings → Environment Variables** 中，**手动添加所有环境变量**（与 `.env.example` 保持一致）。
 5. 部署即可，访问分配的 Vercel 域名（如 `https://your-vercel-domain.vercel.app`）。
@@ -149,7 +149,7 @@ docker-compose down
 
 ### 5.5. 🌐 Netlify 部署
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https%3A%2F%2Fgithub.com%2FViper373%2FZeroHome)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https%3A%2F%2Fgithub.com%2Fwenroumao%2FZeroHome)
 
 
 1. 注册并登录 [Netlify](https://www.netlify.com/)。
@@ -244,26 +244,26 @@ node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
       "id": "5d900e3f-3327-45a2-bc6a-5f9345429c5a",
       "title": "LOL-DeepWinPredictor",
       "description": "基于双向双层、引入注意力机制的LSTM对英雄联盟比赛胜率进行预测",
-      "imageUrl": "https://socialify.git.ci/Viper373/LOL-DeepWinPredictor/image?description=1&font=Source+Code+Pro&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FLOL-DeepWinPredictor%2Flogo.png&name=1&owner=1&pulls=1&stargazers=1&theme=Light",
+      "imageUrl": "https://socialify.git.ci/wenroumao/LOL-DeepWinPredictor/image?description=1&font=Source+Code+Pro&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FLOL-DeepWinPredictor%2Flogo.png&name=1&owner=1&pulls=1&stargazers=1&theme=Light",
       "tags": [
         "Python",
         "Pytorch",
         "Flask",
         "Deep-Learning"
       ],
-      "githubUrl": "https://github.com/Viper373/LOL-DeepWinPredictor",
+      "githubUrl": "https://github.com/wenroumao/LOL-DeepWinPredictor",
       "demoUrl": "https://lol.viper3.us.kg"
     },
     {
       "id": "new_1748645473744_dd8tokvshqb",
       "title": "ZeroHome",
       "description": "轻量、现代、更加配置化的一站式模版个人主页",
-      "imageUrl": "https://socialify.git.ci/Viper373/ZeroHome/image?description=1&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FZeroHome%2Flogo.png&name=1&owner=1&pulls=1&stargazers=1&theme=Light",
+      "imageUrl": "https://socialify.git.ci/wenroumao/ZeroHome/image?description=1&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FZeroHome%2Flogo.png&name=1&owner=1&pulls=1&stargazers=1&theme=Light",
       "tags": [
         "React",
         "Next.js"
       ],
-      "githubUrl": "https://github.com/Viper373/ZeroHome",
+      "githubUrl": "https://github.com/wenroumao/ZeroHome",
       "demoUrl": "https://viper3.top",
       "isPinned": false,
       "status": "published",
@@ -276,27 +276,27 @@ node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
       "id": "e79e853f-20af-4814-a2a8-db440538528e",
       "title": "XOVideos",
       "description": "一个为用户打造的个性化视频下载工具",
-      "imageUrl": "https://socialify.git.ci/Viper373/XOVideos/image?description=1&font=Inter&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FXOVideos%2Flogo.png&name=1&owner=1&pattern=Circuit+Board&pulls=1&stargazers=1&theme=Light",
+      "imageUrl": "https://socialify.git.ci/wenroumao/XOVideos/image?description=1&font=Inter&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FXOVideos%2Flogo.png&name=1&owner=1&pattern=Circuit+Board&pulls=1&stargazers=1&theme=Light",
       "tags": [
         "Python",
         "Crawler",
         "m3u8",
         "boto3"
       ],
-      "githubUrl": "https://github.com/Viper373/XOVideos",
+      "githubUrl": "https://github.com/wenroumao/XOVideos",
       "demoUrl": ""
     },
     {
       "id": "new_1748409450807_zpiwj7ca8i",
       "title": "LightS4",
       "description": "一款基于React和fastapi的S3文件管理器，可在线管理文件",
-      "imageUrl": "https://socialify.git.ci/Viper373/LightS4/image?description=1&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FLightS4%2Flogo.png&name=1&owner=1&pulls=1&stargazers=1&theme=Light",
+      "imageUrl": "https://socialify.git.ci/wenroumao/LightS4/image?description=1&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FLightS4%2Flogo.png&name=1&owner=1&pulls=1&stargazers=1&theme=Light",
       "tags": [
         "React",
         "FastAPI",
         "S3"
       ],
-      "githubUrl": "https://github.com/Viper373/LightS4",
+      "githubUrl": "https://github.com/wenroumao/LightS4",
       "demoUrl": "https://s4.viper3.top",
       "isPinned": false,
       "status": "published",
@@ -309,13 +309,13 @@ node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
       "id": "new_1748413629164_jq6iiy5atp7",
       "title": "GSC-Kit",
       "description": "🚀 GSC-Kit旨在自动化从 Google Search Console (GSC) 提取数据，帮助高效地收集和整理网站的性能指标",
-      "imageUrl": "https://socialify.git.ci/Viper373/GSC-Kit/image?description=1&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FGSC-Kit%2Flogo.png&name=1&owner=1&pulls=1&stargazers=1&theme=Light",
+      "imageUrl": "https://socialify.git.ci/wenroumao/GSC-Kit/image?description=1&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FGSC-Kit%2Flogo.png&name=1&owner=1&pulls=1&stargazers=1&theme=Light",
       "tags": [
         "Python",
         "JavaScript",
         "Google"
       ],
-      "githubUrl": "https://github.com/Viper373/BIPT-JWZX_eduAssess",
+      "githubUrl": "https://github.com/wenroumao/BIPT-JWZX_eduAssess",
       "demoUrl": "",
       "isPinned": false,
       "status": "published",
@@ -334,7 +334,83 @@ node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
         "Crawler",
         "Data-Analysis"
       ],
-      "githubUrl": "https://github.com/Viper373/JD-comments",
+      "githubUrl": "https://github.com/wenroumao/JD-comments",
+      "demoUrl": "",
+      "isPinned": false,
+      "status": "published",
+      "category": "",
+      "priority": 3,
+      "startDate": "2025-05-30",
+      "endDate": ""
+    }
+  ],
+
+
+
+
+
+
+
+   "projects": [
+    {
+      "id": "5d900e3f-3327-45a2-bc6a-5f9345429c5a",
+      "title": "LOL-DeepWinPredictor",
+      "description": "基于双向双层、引入注意力机制的LSTM对英雄联盟比赛胜率进行预测",
+      "imageUrl": "https://socialify.git.ci/Viper373/LOL-DeepWinPredictor/image?description=1&font=Source+Code+Pro&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FLOL-DeepWinPredictor%2Flogo.png&name=1&owner=1&pulls=1&stargazers=1&theme=Light",
+      "tags": [
+        "Python",
+        "Pytorch",
+        "Flask",
+        "Deep-Learning"
+      ],
+      "githubUrl": "https://github.com/Viper373/LOL-DeepWinPredictor",
+      "demoUrl": "https://lol.viper3.us.kg"
+    },
+    {
+      "id": "new_1748645473744_dd8tokvshqb",
+      "title": "wenroumao",
+      "description": "轻量、现代、更加配置化的一站式模版个人主页",
+      "imageUrl": "https://socialify.git.ci/Viper373/ZeroHome/image?description=1&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FZeroHome%2Flogo.png&name=1&owner=1&pulls=1&stargazers=1&theme=Light",
+      "tags": [
+        "React",
+        "Next.js"
+      ],
+      "githubUrl": "https://github.com/wenroumao",
+      "demoUrl": "https://blog.wenroumao.com",
+      "isPinned": false,
+      "status": "published",
+      "category": "",
+      "priority": 4,
+      "startDate": "2025-09-21",
+      "endDate": ""
+    },
+    {
+      "id": "e79e853f-20af-4814-a2a8-db440538528e",
+      "title": "XOVideos",
+      "description": "一个为用户打造的个性化视频下载工具",
+      "imageUrl": "https://socialify.git.ci/Viper373/XOVideos/image?description=1&font=Inter&forks=1&issues=1&logo=https%3A%2F%2Fimg.viper3.top%2FXOVideos%2Flogo.png&name=1&owner=1&pattern=Circuit+Board&pulls=1&stargazers=1&theme=Light",
+      "tags": [
+        "Python",
+        "Crawler",
+        "m3u8",
+        "boto3"
+      ],
+      "githubUrl": "https://github.com/Viper373/XOVideos",
+      "demoUrl": ""
+    },
+
+
+    {
+      "id": "",
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "tags": [
+        "Python",
+        "Crawler",
+        "Data-Analysis"
+      ],
+      "githubUrl": "",
       "demoUrl": "",
       "isPinned": false,
       "status": "published",

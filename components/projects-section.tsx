@@ -127,7 +127,7 @@ export function ProjectsSection() {
     loop: true,
     align: "center" as const,
   };
-  const [emblaRef, emblaApi] = useEmblaCarousel(emblaOptions, [Autoplay(autoplayOptions)]);
+  const [emblaRef, emblaApi] = useEmblaCarousel(emblaOptions, [Autoplay(autoplayOptions) as any]);
 
   const scrollPrev = useCallback(() => {
     if (!emblaApi) return;

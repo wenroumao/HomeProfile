@@ -46,7 +46,6 @@ interface ProfileData {
   mbti_title?: string | null;
   mbti_image_url?: string | null; // MBTI 图片URL
   mbti_traits?: string[] | null; // MBTI 个性特质（4条）
-  rss_url?: string | null;
   folo_url?: string | null; // Added for Folo link
   steam_user_id?: string | null;
   steam_api_key?: string | null;
@@ -132,7 +131,6 @@ export default function AdminProfilePage() {
     mbti_title: '',
     mbti_image_url: '',
     mbti_traits: ['', '', '', ''],
-    rss_url: '',
     folo_url: '',
     steam_user_id: '',
     steam_api_key: '',
@@ -176,7 +174,6 @@ export default function AdminProfilePage() {
           mbti_title: data.mbti_title || '',
           mbti_image_url: data.mbti_image_url || '',
           mbti_traits: Array.isArray(data.mbti_traits) && data.mbti_traits.length === 4 ? data.mbti_traits : ['', '', '', ''],
-          rss_url: data.rss_url || '',
           folo_url: data.folo_url || '',
           steam_user_id: data.steam_user_id || '',
           // steam_api_key and netease_music_u come from env, not profile data directly for saving
@@ -266,7 +263,6 @@ export default function AdminProfilePage() {
       mbti_title: profile.mbti_title || '',
       mbti_image_url: profile.mbti_image_url || '',
       mbti_traits: Array.isArray(profile.mbti_traits) ? profile.mbti_traits.map(t => t || '') : ['', '', '', ''],
-      rss_url: profile.rss_url || null,
       folo_url: profile.folo_url || null,
       steam_user_id: profile.steam_user_id || null,
       netease_user_id: profile.netease_user_id || null,
@@ -468,18 +464,6 @@ export default function AdminProfilePage() {
         <fieldset className="space-y-4 border rounded-md p-4 bg-muted/50">
           <legend className="text-lg font-semibold text-foreground mb-2">{t('adminProfile.mediaStatsTitle')}</legend>
           <div>
-            <label htmlFor="rss_url" className="block text-sm font-medium text-foreground mb-1">{t('adminProfile.rssUrlLabel')}</label>
-            <Input
-              type="url"
-              name="rss_url"
-              id="rss_url"
-              value={profile.rss_url || ''}
-              onChange={handleInputChange}
-              placeholder="如：https://yourblog.com/rss.xml"
-              className="w-full"
-            />
-          </div>
-          <div>
             <label htmlFor="folo_url" className="block text-sm font-medium text-foreground mb-1">{t('adminProfile.foloUrlLabel')}</label>
             <Input
               type="url"
@@ -553,4 +537,4 @@ export default function AdminProfilePage() {
       </form>
     </div>
   );
-} 
+}

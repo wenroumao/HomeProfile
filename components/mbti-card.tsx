@@ -51,7 +51,7 @@ export const MBTICard = memo(function MBTICard() {
   const mbtiTraits = mbti?.mbti_traits && mbti.mbti_traits.length > 0
     ? mbti.mbti_traits
     : [t('mbti.trait1'), t('mbti.trait2'), t('mbti.trait3'), t('mbti.trait4')]
-  const mbtiImage = mbti?.mbti_image_url || '/images/mbti-avatar.png'
+  const mbtiImage = mbti?.mbti_image_url || '/images/mbti-avatar.svg'
   const learnMoreText = t('mbti.learnMoreLinkText', { personalityType: mbtiTitle })
 
   return (
@@ -90,6 +90,12 @@ export const MBTICard = memo(function MBTICard() {
           alt={`${mbtiType} Avatar`}
           className="h-40 w-40"
           loading="lazy"
+          onError={(e) => {
+            const target = e.target as HTMLImageElement;
+            if (target.src !== '/images/mbti-avatar.svg') {
+              target.src = '/images/mbti-avatar.svg';
+            }
+          }}
         />
       </div>
       

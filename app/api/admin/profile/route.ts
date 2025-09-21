@@ -29,7 +29,6 @@ interface ProfileData {
   mbti_title?: string | null;
   mbti_image_url?: string | null;
   mbti_traits?: string[] | null;
-  rss_url?: string | null;
   steam_user_id?: string | null;
   steam_api_key?: string | null;
   netease_user_id?: string | null;

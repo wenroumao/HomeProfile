@@ -36,7 +36,7 @@ export default function RootLayout({
     <html lang="zh" suppressHydrationWarning>
       <head>
         {/* 对于 'use client' layout，在此处直接管理 title 和 meta 标签 */}
-        <title>ZeroHome</title>
+        <title>wenroumao</title>
         <meta name="description" content="轻量、现代、更加配置化的一站式模版主页" />
         <link rel="icon" href="/images/logo.png" type="image/png" />
       </head>
