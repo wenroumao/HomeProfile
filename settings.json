@@ -61,7 +61,7 @@
         },
         {
           "name": "React",
-          "level": 35
+          "level": 15
         }
       ]
     },
@@ -70,11 +70,11 @@
       "skills": [
         {
           "name": "Python",
-          "level": 95
+          "level": 40
         },
         {
           "name": "Java",
-          "level": 50
+          "level": 40
         },
         {
           "name": "Node.js",
@@ -87,19 +87,19 @@
       "skills": [
         {
           "name": "MySQL",
-          "level": 85
+          "level": 60
         },
         {
           "name": "MongoDB",
-          "level": 85
+          "level": 30
         },
         {
           "name": "Redis",
-          "level": 50
+          "level": 35
         },
         {
           "name": "Postgresql",
-          "level": 20
+          "level": 10
         }
       ]
     },
@@ -108,11 +108,11 @@
       "skills": [
         {
           "name": "Docker",
-          "level": 70
+          "level": 50
         },
         {
           "name": "Git",
-          "level": 80
+          "level": 70
         }
       ]
     }
